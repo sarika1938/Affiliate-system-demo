@@ -1,759 +1,967 @@
 /* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
-  color: #f9f9f9;
-  background-color: #111;
-  overflow-x: hidden;
-  position: relative;
+    color: #f9f9f9;
+    background-color: #111;
+    overflow-x: hidden;
+    position: relative;
 }
 
 /* Header */
 header {
-  text-align: center;
-  padding: 90px 5%;
-  color: white;
-  background-image: url(image/header-image.jpg);
-  background-size: cover;
+    text-align: center;
+    padding: 90px 5%;
+    color: white;
+    background-image: url(image/header-image.jpg);
+    background-size: cover;
 }
 
 h1 {
-  font-size: 55px;
-  color: #FFC400;
-  font-weight: bolder;
-  font-family: sans-serif;
+    font-size: 55px;
+    color: #FFC400;
+    font-weight: bolder;
+    font-family: sans-serif;
 }
 
 h4 {
-  font-size: 25px;
-  margin-top: 10px;
+    font-size: 25px;
+    margin-top: 10px;
 }
 
 .header-loader-image {
-  width: 160px;
-  height: 50px;
-  margin-top: 10px;
+    width: 160px;
+    height: 50px;
+    margin-top: 10px;
 }
 
 /* Buttons */
 .btn {
-  margin-top: 50px;
-  padding: 14px 30px;
-  border: none;
-  height: 60px;
-  font-size: medium;
-  color: white;
-  font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.3s ease, border 0.3s ease;
+    margin-top: 50px;
+    padding: 14px 30px;
+    border: none;
+    height: 60px;
+    font-size: medium;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, border 0.3s ease;
 }
 
-.btn-primary, .btn-danger, .btn-success {
-  background-color: #ff0404;
+.btn-primary,
+.btn-danger,
+.btn-success {
+    background-color: #ff0404;
 }
 
 .btn:hover {
-  border: 2px double whitesmoke;
+    border: 2px double whitesmoke;
 }
 
 section {
-  padding: 20px 5%;
-  /* Responsive padding */
+    padding: 20px 5%;
 }
 
 /* About Section */
 .about {
-  display: flex;
-  gap: 60px;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 h2 {
-  font-size: 50px;
-  font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 p {
-  font-size: medium;
-  line-height: 1.8;
-  text-align: left;
+    font-size: medium;
+    line-height: 1.8;
+    text-align: left;
 }
 
 .about-left {
-  flex: 1;
+    flex: 1;
 }
 
 .about-right {
-  flex: 1;
-  text-align: center;
+    flex: 1;
+    text-align: center;
 }
 
 .about-right img {
-  width: 100%;
-  max-width: 550px;
-  height: auto;
-  border-radius: 50%;
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
-  animation-delay: 1s;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1s;
 }
 
 /* ABS Section */
 .abs {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.abs-left, .abs-right {
-  flex: 1;
-  text-align: center;
+.abs-left,
+.abs-right {
+    flex: 1;
+    text-align: center;
 }
 
 .hover-rotate {
-  transition: transform 0.8s ease;
+    transition: transform 0.8s ease;
 }
 
 .hover-rotate:hover {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .abs-right button {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 /* Offer Section */
 .offers {
-  background-image: url(image/2706c511239a37c333461641e548d422.jpg);
-  background-size: cover;
-  background-position: center;
+    background-image: url(image/2706c511239a37c333461641e548d422.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .offers h4 {
-  text-align: center;
-  font-size: 45px;
-  margin-bottom: 40px;
-  font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .offer-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 80px;
-  margin-bottom: 10px ;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
-.offer-image, .offer-text {
-  flex: 1;
-  text-align: center;
+.offer-image,
+.offer-text {
+    flex: 1;
+    text-align: center;
 }
 
 .zoom-on-hover {
-  transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .zoom-on-hover:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* Cards Section */
 .cards h2 {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .row {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .col-md-4 {
-  flex: 1 1 300px;
-  max-width: 100%;
-  background: rgb(21, 21, 21);
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  border-radius: 12px;
-  transition: box-shadow 0.4s ease, border 0.4s ease;
-  overflow: hidden;
+    flex: 1 1 300px;
+    max-width: 100%;
+    background: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease, border 0.4s ease;
+    overflow: hidden;
 }
 
 .card {
-  background: black;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  padding: 20px;
-  margin-bottom: 10px;
-  transition: transform 0.4s;
-  border: 4px solid transparent;
+    background: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: transform 0.4s;
+    border: 4px solid transparent;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+    transform: translateY(-8px);
 }
 
 .card img {
-  max-width: 100px;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .cards-section-button {
-  text-align: center;
-  margin-top: 40px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 /* Cards hover border & shadow dynamic implemented via JS */
 
 /* Why Section */
 .animations {
-  width: 100%;
-  background-color: #000;
-  padding: 60px 0;
+    width: 100%;
+    background-color: #000;
+    padding: 60px 0;
 }
 
 .slide-up-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fff;
-  animation: slideUp 1s ease-out forwards;
-  margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    animation: slideUp 1s ease-out forwards;
+    margin-bottom: 30px;
 }
 
 @keyframes slideUp {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Rows 2x2 with bigger gap */
 .cards-row {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 /* Card common style with light background */
 .card-box {
-  border-radius: 15px;
-  padding: 25px;
-  width: 480px;
-  height: 350px;
-  opacity: 1;
-  transition: all 0.4s ease;
-  font-family: 'Times New Roman', Times, serif;
-  color: #000;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  background-color: #fafafa;
-  border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 25px;
+    width: 480px;
+    height: 350px;
+    opacity: 1;
+    transition: all 0.4s ease;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+    border: 2px solid transparent;
 }
 
 .ani-head {
-  font-size: 26px;
-  margin-bottom: 15px;
-  color: #000;
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #000;
 }
 
 .ani-pra {
-  font-size: 16px;
-  color: #000;
-  line-height: 1.4;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.4;
 }
 
 .card-box:hover {
-  background-color: #ddd;
-  /* darker but still readable */
-  border-color: #888;
-  box-shadow: 0 6px 22px rgba(0,0,0,0.15);
+    background-color: #ddd;
+    border-color: #888;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15);
 }
 
-/* Left and right animations */
-.card-left {
-  animation: slideFromLeft 1s ease-out forwards;
-}
-
+/* Left and right animations - disabled by default; triggered by .in-view or helper classes */
+.card-left,
 .card-right {
-  animation: slideFromRight 1s ease-out forwards;
-  animation-delay: 0.2s;
+    animation: none;
+    opacity: 0; /* keep hidden until in-view */
 }
 
 /* Keyframes for slide */
 @keyframes slideFromLeft {
-  0% {
-    transform: translateX(-120px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slideFromRight {
-  0% {
-    transform: translateX(120px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* Different colors */
 .card1 {
-  background-color: #fffbe6b6;
+    background-color: #fffbe6b6;
 }
+
 .card2 {
-  background-color: #d5eda9;
+    background-color: #d5eda9;
 }
+
 .card3 {
-  background-color: #e2f1fffa;
+    background-color: #e2f1fffa;
 }
+
 .card4 {
-  background-color: #ffd9e3;
+    background-color: #ffd9e3;
 }
 
 /* Access Button */
 .access {
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 /* Empower Section */
 .empower {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  background-color: #111;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #111;
 }
 
 .empower-left img {
-  width: 60%;
-  animation: smoothFadeIn 3s ease forwards;
-  /* subtle smooth animation */
+    width: 60%;
+    animation: smoothFadeIn 3s ease forwards;
 }
 
 .empower-right {
-  width: 40%;
+    width: 40%;
 }
 
 /* Entire System Section */
 .entire-system-section {
-  padding: 10px 10%;
-  background-color: #111;
-  color: #f9f9f9;
+    padding: 10px 10%;
+    background-color: #111;
+    color: #f9f9f9;
 }
 
 .entire-head {
-  text-align: center;
-  margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .entire-head h1 {
-  font-size: 32px;
-  color: #ffc400;
+    font-size: 32px;
+    color: #ffc400;
 }
 
 .entire-system {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 /* Flex rows */
 .entire-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0px;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    flex-wrap: wrap;
 }
 
 .entire-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .entire-image img {
-  width: 100%;
-  max-width: 550px;
-  border-radius: 12px;
-  /* Remove zoom animation */
-  animation: none !important;
+    width: 100%;
+    max-width: 550px;
+    border-radius: 12px;
+    animation: none !important;
 }
 
 .entire-text {
-  flex: 1;
-  text-align: left;
+    flex: 1;
+    text-align: left;
 }
 
 .entire-text h2 {
-  color: #ffcc00;
-  font-size: 26px;
-  margin-bottom: 15px;
+    color: #ffcc00;
+    font-size: 26px;
+    margin-bottom: 15px;
 }
 
 .entire-text p {
-  color: #ddd;
-  font-size: 16px;
-  line-height: 1.6;
+    color: #ddd;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* Promotion Section */
 .promotion-section {
-  padding: 60px 10%;
-  background-color: #111;
-  color: #f9f9f9;
+    padding: 60px 10%;
+    background-color: #111;
+    color: #f9f9f9;
 }
 
 .promotion-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .promotion-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .promotion-image img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 12px;
-  animation: smoothZoom 2s ease-in-out infinite;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    animation: smoothZoom 2s ease-in-out infinite;
 }
 
 @keyframes smoothZoom {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.03); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
 }
 
 .promotion-text {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
 .promotion-text h2 {
-  font-size: 28px;
-  color: #ffcc00;
+    font-size: 28px;
+    color: #ffcc00;
 }
 
 .promotion-text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ddd;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
 }
 
 /* Testimonial Section */
 .testimonial-section {
-  background-color: #0e0e0e;
-  padding: 80px 10%;
-  color: #fff;
+    background-color: #0e0e0e;
+    padding: 80px 10%;
+    color: #fff;
 }
 
 .testimonial-head {
-  text-align: center;
-  margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .testimonial-head h2 {
-  font-size: 32px;
-  color: #ffc400;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    font-size: 32px;
+    color: #ffc400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .testimonial {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .testimonial-card {
-  background: #f9f9f9;
-  color: #222;
-  flex: 1;
-  min-width: 300px;
-  max-width: 32%;
-  padding: 25px 30px;
-  border-radius: 20px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #f9f9f9;
+    color: #222;
+    flex: 1;
+    min-width: 300px;
+    max-width: 32%;
+    padding: 25px 30px;
+    border-radius: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .testimonial-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
 }
 
 .testimonial-card p {
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .testimonial-footer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .testimonial-footer img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #ffc400;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffc400;
 }
 
 .testimonial-footer span {
-  font-weight: bold;
-  color: #000;
-  font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
 }
 
 /* Footer */
 footer {
-  color: white;
-  padding: 60px 5%;
-  margin-top: 0;
+    color: white;
+    padding: 60px 5%;
+    margin-top: 0;
 }
 
 /* FAQ */
 .foot-head {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #adff2f;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #adff2f;
 }
 
 .faq-container {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .faq-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
 }
 
 .faq-box {
-  flex: 1 1 calc(50% - 30px);
-  border: 2px solid greenyellow;
-  border-radius: 12px;
-  padding: 25px;
-  background: #111;
-  transition: 0.3s;
-  outline-offset: 2px;
+    flex: 1 1 calc(50% - 30px);
+    border: 2px solid greenyellow;
+    border-radius: 12px;
+    padding: 25px;
+    background: #111;
+    transition: 0.3s;
+    outline-offset: 2px;
 }
 
 .faq-box:hover {
-  background: #181818;
-  box-shadow: 0 4px 15px rgba(173, 255, 47, 0.3);
+    background: #181818;
+    box-shadow: 0 4px 15px rgba(173, 255, 47, 0.3);
 }
 
 .faq-box h4 {
-  color: #9eff9e;
-  margin-bottom: 10px;
+    color: #9eff9e;
+    margin-bottom: 10px;
 }
 
 .faq-box p {
-  color: #ccc;
-  font-size: 15px;
-  line-height: 1.6;
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .foot-bottom {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 60px;
-  border-top: 1px solid #333;
-  padding-top: 20px;
-  font-size: 14px;
-  color: #aaa;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #aaa;
 }
 
 /* Back to Top Button */
 #back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  background-color: #ff0404;
-  color: white;
-  border: none;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  font-size: 28px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  opacity: 0.8;
-  z-index: 1000;
-  transition: opacity 0.3s ease;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #ff0404;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
 }
 
 #back-to-top:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* Modal Overlay and Content */
 #modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
 }
 
 #modal[hidden] {
-  display: none;
+    display: none;
 }
 
 #modal-content {
-  background: white;
-  padding: 25px 30px;
-  border-radius: 8px;
-  max-width: 400px;
-  width: 90%;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  text-align: center;
-  color: #000;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #000;
 }
 
 #modal-close {
-  margin-top: 20px;
-  padding: 10px 25px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  background-color: #ff0404;
-  color: white;
-  font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff0404;
+    color: white;
+    font-weight: bold;
 }
 
 /* Scroll and Fade */
 .fade-in-delay {
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
-  animation-delay: 2s;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 2s;
 }
 
 @keyframes fadeIn {
-  to { opacity: 1; }
+    to {
+        opacity: 1;
+    }
 }
 
 .scroll-animate {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 2s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 2s ease;
 }
 
 .scroll-animate.active {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
-  section, header {
-    padding: 40px 5%;
-  }
-  .about, .abs, .offer-row, .empower {
-    flex-direction: column;
-    text-align: center;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  .about-left, .abs-right, .offer-text, .empower-right {
-    width: 100%;
-    padding: 10px 0;
-  }
-  button {
-    display: block;
-    margin: 20px auto;
-  }
-  h1, h2, h3, p {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
+
+    section,
+    header {
+        padding: 40px 5%;
+    }
+
+    .about,
+    .abs,
+    .offer-row,
+    .empower {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-left,
+    .abs-right,
+    .offer-text,
+    .empower-right {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    button {
+        display: block;
+        margin: 20px auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}
+
+/* Layout fix for small screens except header */
+@media (max-width: 992px) {
+
+    #about-abs-section,
+    #abs-offers,
+    #abs-cards-section,
+    #why-abs-section,
+    #empower-section,
+    #entire-system-section,
+    #promotion-section,
+    #testimonial-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Text first */
+    #about-abs-section .about-left,
+    #abs-offers .offer-text,
+    #abs-cards-section .card,
+    #why-abs-section .card-box,
+    #empower-section .empower-right,
+    #entire-system-section .entire-text,
+    #promotion-section .promotion-text,
+    #testimonial-section .testimonial-card {
+        order: 1;
+    }
+
+    /* Image second */
+    #about-abs-section .about-right,
+    #abs-offers .offer-image,
+    #abs-cards-section .card img,
+    #why-abs-section .card-box img,
+    #empower-section .empower-left,
+    #entire-system-section .entire-image,
+    #promotion-section .promotion-image {
+        order: 2;
+    }
+
+    /* Button last */
+    button.btn,
+    #abs-offers button,
+    #why-abs-section button {
+        order: 3;
+    }
 }
 
 @media (max-width: 768px) {
-  .cards-row {
+    .cards-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .card-box {
+        width: 70%;
+        height: auto;
+    }
+
+    .testimonial-card {
+        flex: 1 1 100%;
+    }
+
+    .faq-box {
+        flex: 1 1 100%;
+    }
+
+    .foot-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+/* Default layout - image left, text right */
+.responsive-reorder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Assuming direct children are image and text containers */
+/* Adjust selectors below according to your HTML structure */
+
+/* Example selectors for these sections */
+.responsive-reorder > .offer-image,
+.responsive-reorder > .entire-image,
+.responsive-reorder > .promotion-image {
+  order: 2; /* image second */
+  flex: 1;
+  text-align: center;
+}
+
+.responsive-reorder > .offer-text,
+.responsive-reorder > .entire-text,
+.responsive-reorder > .promotion-text {
+  order: 1; /* text first */
+  flex: 1;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  /* Stack vertically with text above image on small screens */
+  .responsive-reorder {
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
   }
-  .card-box {
-    width: 70%;
-    height: auto;
+  .responsive-reorder > .offer-image,
+  .responsive-reorder > .entire-image,
+  .responsive-reorder > .promotion-image {
+    order: 2;
+    width: 100%;
   }
-  .testimonial-card {
-    flex: 1 1 100%;
-  }
-  .faq-box {
-    flex: 1 1 100%;
-  }
-  .foot-bottom {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
+  .responsive-reorder > .offer-text,
+  .responsive-reorder > .entire-text,
+  .responsive-reorder > .promotion-text {
+    order: 1;
+    width: 100%;
+    padding-bottom: 1rem; /* spacing */
   }
 }
+
+/* --- Additional fixes & animation triggers added --- */
+
+/* Ensure scroll-animate becomes visible only when observer adds .in-view */
+.scroll-animate.in-view,
+.scroll-animate.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Prevent why-abs cards from animating on page load: use .in-view to trigger */
+.card-left,
+.card-right,
+.card-box {
+    opacity: 0;
+}
+
+.card-left.in-view {
+    animation: slideFromLeft 0.9s ease-out forwards;
+}
+
+.card-right.in-view {
+    animation: slideFromRight 0.9s ease-out forwards;
+}
+
+/* Additional helper classes for explicit slide directions */
+.slide-in-left {
+    animation: slideFromLeft 0.9s ease-out forwards;
+}
+.slide-in-right {
+    animation: slideFromRight 0.9s ease-out forwards;
+}
+
+/* Center offers heading and ensure it's at the top center of the section */
+#offers-heading {
+    text-align: center;
+    margin: 0 auto 24px;
+    display: block;
+}
+
+/* Center the offer section button at the bottom center */
+.offer-section-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Center empower heading within its column */
+.empower-right {
+    width: 40%;
+    text-align: center; /* center heading and paragraph */
+}
+
+/* Responsive reorder explicit rules for the three target sections */
+@media (max-width: 992px) {
+    /* Force text above image on small screens for these sections */
+    #abs-offers .offer-text,
+    #entire-system-section .entire-text,
+    #promotion-section .promotion-text {
+        order: 1 !important;
+        width: 100%;
+    }
+
+    #abs-offers .offer-image,
+    #entire-system-section .entire-image,
+    #promotion-section .promotion-image {
+        order: 2 !important;
+        width: 100%;
+    }
+
+    /* Make sure the container stacks vertically */
+    #abs-offers .offer-row,
+    #entire-system-section .entire-row,
+    #promotion-section .promotion-row {
+        flex-direction: column;
+    }
+}
+
+/* Small tweak: ensure back-to-top is always above other layers when visible */
+#back-to-top { z-index: 9999; }
+
